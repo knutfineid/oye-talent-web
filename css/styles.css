@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;1,700&display=swap');
+
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(240, 246, 251);
+    color: rgb(0, 0, 0);
+    align-content: center;
+    justify-content: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    min-width: 390px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+header, .slogan, .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.contact {
+    display: inline-block;
+    margin: 0;
+}
+
+.slogan {
+    font-size: 22px;
+    padding-bottom: 0;
+}
+
+header {
+    align-items: flex-start;
+    background-color: #cccccc;
+    background-image: url("/img/header.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding: 8% 8% 8% 8%;
+}
+
+h1 {
+    position: sticky;
+    display: inline-block;
+    width: auto;
+    font-weight: 700;
+    font-size: 70px;
+    /* rotate: -4deg; */
+    font-style: oblique;
+    /* text-shadow: 3px 1px 5px #747474; */
+    margin: 0px;
+}
+
+.card {
+    /* justify-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image personalia";
+    /* border: 2px solid rgb(142, 142, 142); */
+    /* border-radius: 16px; */
+    overflow: hidden;
+    width: 471px;
+    aspect-ratio: 5 / 2.5;
+    margin: 10px;
+}
+
+.portrait {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.personalia {
+    grid-area: personalia;
+    padding: 10px;
+    margin: auto 0;
+}
+
+footer {
+    border-top: 2px solid black;
+    padding: 20px ;
+}
+
+.logo {
+    width: 150px;
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        max-width: 675px;
+    }
+
+    .slogan {
+        font-size: 18px;
+    }
+    
+    .team {
+        font-size: 13.5px;
+    }
+    
+    h1 {
+        font-size: 52.5px;
+    }
+
+    .card {
+        width: 385.5px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        /* padding: 50px 50px 50px 50px; */
+    }
+}
+
+@media screen and (max-width: 675px) {
+    body {
+        max-width: 390px;
+    }
+
+    .slogan {
+        font-size: 14px;
+    }
+    
+    .team {
+        font-size: 11px;
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+
+    .card {
+        width: 300px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        /* padding: 50px 50px 50px 30px; */
+    }
+}
